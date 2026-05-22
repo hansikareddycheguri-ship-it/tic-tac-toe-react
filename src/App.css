@@ -1,16 +1,43 @@
 body{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background-color:cornsilk;
+  background-color:bisque;
+}
+
+
+.Board{
+    display:grid;
+    grid-template-columns:repeat(3,100px) ;
+    gap:10px;
+    margin:30px 0px;
+    justify-content:center;
+}
+.Square{
+    width:100px;
+    height:100px;
+    font-size:2rem;
+    font-weight:bold;
+    border-radius:10px;
+    background-color:lightgray;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    transition:transform 0.3s ease;
+    cursor:pointer;
+}
+.Square:hover{
+background-color:grey;
+transform:scale(1.05);
 
 }
-button{
-background-color: aliceblue;
-display:flex;
-margin:5px;
-display:inline;
-border-radius:10px;
-border:none;
-padding:10px 20px;
+@media(max-width:600px){
+    .Square{
+        width:80px;
+        height:80px;
+        font-size:1.5rem;
+    }
+.Board{
+        display:grid;
+        gap:6px;
+         grid-template-columns:repeat(3,80px) ;
+}
 }
