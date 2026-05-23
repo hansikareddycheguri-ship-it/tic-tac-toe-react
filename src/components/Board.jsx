@@ -1,20 +1,16 @@
 import Square from "./Square";
-function Board(){
+function Board({board,handleClick}){
     return(
-    <div className="Board">
-       
-        <Square value="X"/>
-        <Square value="O"/>
-        <Square value=""/>
-     
-        <Square value="X"/>
-        <Square value="O"/>
-        <Square value=""/>
-     
-        <Square value="X"/>
-        <Square value="O"/>
-        <Square value=""/>
-     </div>
+    <div  className="Board">
+    {board.map((value,index)=>(
+        <Square 
+        key={index}
+        value={value}
+        onClick={()=>handleClick(index)}
+        />
+    ))
+}
+    </div>
     );
     
 }

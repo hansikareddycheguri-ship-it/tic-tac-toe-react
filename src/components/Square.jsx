@@ -1,6 +1,6 @@
-function Square(props){
+function Square({value,onClick}){
     return(
-        <button className="Square">{props.value}</button>
+        <button className="Square" onClick={onClick}>{value}</button>
     );
 }
 export default Square;
