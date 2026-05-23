@@ -56,6 +56,12 @@ function checkWinner(board){
       }
     return null;
   }
+  function resetGame(){
+  setBoard(Array(9).fill(""));
+  setCurrentPlayer("X");
+  setWinner(null);
+  }
+ 
 return(
 <div>
   <h1>TIC-TAC-TOE</h1>
@@ -64,6 +70,7 @@ return(
   <Scoreboard />
 {winner && <h2>Winner: {winner}</h2>}
   <Board board={board} handleClick={handleClick}/>
+   <button onClick={()=>resetGame()}>RESET</button>
 </div>
 );
 
