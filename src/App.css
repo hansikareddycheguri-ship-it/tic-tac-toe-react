@@ -31,7 +31,7 @@ body{
 }
 h1{
     font-size:4rem;
-    margin-bottom:10px;
+    margin-bottom:25px;
    color:white;
    letter-spacing:3px;
    text-shadow:0px 0px 15px rgba(255,255,255,0.5);
@@ -88,9 +88,11 @@ box-shadow:
          grid-template-columns:repeat(3,80px) ;
 }
 h1{
-    font-size:2.5rem;
+    font-size:3rem;
 }
-
+.turn-text{
+    font-size:1.2rem;
+}
 }
 .scoreboard{
     display:flex;
@@ -159,10 +161,9 @@ animation:pop 0.4s ease;
 .turn-text{
     color:white;
     margin-top:-10px;
+    margin-bottom:25px;
+    font-size:1.8rem;
     letter-spacing:1px;
-}
-.turn-text span{
-    color:#4da6ff;
 }
 .winning{
     background:#00e676;
@@ -170,6 +171,17 @@ animation:pop 0.4s ease;
     box-shadow:0px 0px 20px rgba(0,230,118,0.8);
     animation:glow 0.8s infinite alternate;
 }
+.x-turn{
+    color:#4da6ff;
+    font-weight:bold;
+    text-shadow: 0px 0px 10px rgba(77,166,255,0.7);
+}
+.o-turn{
+    color:#ff6666;
+    font-weight:bold;
+    text-shadow: 0px 0px 10px rgba(255,102,102,0.7);
+}
+
 @keyframes glow{
     from{
         transform:scale(1);

@@ -86,8 +86,15 @@ function checkWinner(board){
 return(
 <div className="app-container">
   <h1>TIC-TAC-TOE</h1>
-<h2 className="turn-text">CurrentTurn:{currentPlayer}</h2>
-  
+<h2 className="turn-text">CurrentTurn:{" "}
+  <span 
+   className={
+    currentPlayer==="X"
+   ? "x-turn"
+  :"o-turn"}
+  >{currentPlayer}
+  </span>
+  </h2>
   <Scoreboard 
   xScore={xScore}
   oScore={oScore}
