@@ -1,22 +1,14 @@
 function Scoreboard({xScore,oScore}){
     return(
-        <div 
-         style={{
-            display:"flex",
-            justifyContent:"center",
-            gap:"40px",
-            margin:"20px 0px"
-         }}
-         >
-            <h2>Score board</h2>
-        <h2
-        style={{
-            color:"blue"
-        }}>X Score:{xScore}</h2>
-         <h2
-        style={{
-            color:"red"
-        }}>O Score:{oScore}</h2>
+        <div className="scoreboard">
+        <div  className="score-card x-card">
+         <h2>X</h2>
+         <p>{xScore}</p>
+    </div>
+    <div className="score-card o-card">
+        <h2>O</h2>
+<p>{oScore}</p>
+       </div>
        </div>
     );
 }

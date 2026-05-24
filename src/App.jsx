@@ -6,6 +6,7 @@ function App(){
   const[board,setBoard]=useState(Array(9).fill(""));
   const[currentPlayer,setCurrentPlayer]=useState("X");
   const[winner,setWinner]=useState(null);
+  const[winningSquares,setWinningSquares]=useState([]);
   const[draw,setDraw]=useState(false);
   const[xScore,setXScore]=useState(0);
   const[oScore,setOScore]=useState(0);
@@ -35,7 +36,8 @@ newBoard[index]=currentPlayer;
     (square)=>square !==""
   );
    if(gameWinner){
-    setWinner(gameWinner);
+    setWinner(gameWinner.winner);
+    setWinningSquares(gameWinner.combination);
     if(currentPlayer==="X"){
       setXScore(xScore+1);
     }
@@ -65,12 +67,16 @@ function checkWinner(board){
           board[a] === board[c]
         )
         {
-          return board[a];
-        }
+          return {
+            winner:board[a],
+           combination:combination
+        };
       }
+    }
     return null;
   }
   function resetGame(){
+    setWinningSquares([]);
   setDraw(false);
   setBoard(Array(9).fill(""));
   setCurrentPlayer("X");
@@ -78,49 +84,33 @@ function checkWinner(board){
   }
  
 return(
-<div>
+<div className="app-container">
   <h1>TIC-TAC-TOE</h1>
-<h2>CurrentTurn:{currentPlayer}</h2>
+<h2 className="turn-text">CurrentTurn:{currentPlayer}</h2>
   
   <Scoreboard 
   xScore={xScore}
   oScore={oScore}
   />
 {winner &&( 
-<div style={{
-  textAlign:"center",
-  marginTop:"20px"
-  }}>
-    <h2
-    style={{
-      color:"green",
-      fontSize:"2.5rem",
-      fontWeight:"bold"
-    }}>Winner: {winner}</h2>
-    <p 
-    style={{
-      fontSize:"1.2rem",
-      color:"darkred"
-    }}
-    >
+<div className="winner-card">
+    <h2 className="winner-text">Winner: {winner}</h2>
+    <p className="game-over-text">
       Game Over!
     </p>
     </div>
     )}
     {draw &&( 
-
-    <h2
-    style={{
-      textAlign:"center",
-      fontSize:"1.2rem",
-      color:"darkred"
-    }}
-    >
+<div className="winner-card">
+    <h2 className="draw-text">
       Draw Game!
     </h2>
+    </div>
     )}
-  <Board board={board} handleClick={handleClick}/>
-   <button onClick={()=>resetGame()}
+  <Board board={board} 
+  handleClick={handleClick}
+  winningSquares={winningSquares}/>
+   <button onClick={resetGame}
     style={{
       marginTop:"20px",
       padding:"10px 20px",
