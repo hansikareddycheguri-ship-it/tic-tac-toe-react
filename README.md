@@ -1,16 +1,57 @@
-# React + Vite
+# TIC-TAC-TOE REACT GAME
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and interactive Tic-Tac-Toe game built using React and Vite.
 
-Currently, two official plugins are available:
+## FEATURES
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Dynamic Tic-Tac-Toe gameplay
+- Winner detection
+- Draw detection
+- Score tracking system
+- Winning square highlight animations
+- Responsive design
+- Modern glassmorphism UI
+- Smooth hover effects and animations
+- Reset functionality
 
-## React Compiler
+## TECH STACK
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- CSS
 
-## Expanding the ESLint configuration
+## LIVE DEMO
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+tic-tac-toe-react-2le5191jb-cheguri-hansika-reddy-s-projects.vercel.app
+
+## HOW TO RUN LOCALLY
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/hansikareddycheguri-ship-it/tic-tac-toe-react
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Start development server
+
+```bash
+npm run dev
+```
+
+## FUTURE IMPROVEMENTS
+
+- Play vs Computer mode
+- LocalStorage score persistence
+- Sound effects
+- Dark/Light theme toggle
+
+## AUTHOR
+
+Hansika Reddy
