@@ -1,57 +1,80 @@
-# TIC-TAC-TOE REACT GAME
+# TIC-TAC-TOE REACT GAME 🎮
 
-A modern and interactive Tic-Tac-Toe game built using React and Vite.
+A modern and interactive Tic-Tac-Toe game built using React and Vite with smooth UI animations, LocalStorage persistence, and a computer opponent mode.
 
-## FEATURES
+---
+
+## 🚀 FEATURES
 
 - Dynamic Tic-Tac-Toe gameplay
+- Player vs Player mode
+- Player vs Computer mode
 - Winner detection
 - Draw detection
 - Score tracking system
+- LocalStorage persistence for scores
+- Reset game functionality
+- Reset scores functionality
 - Winning square highlight animations
 - Responsive design
 - Modern glassmorphism UI
-- Smooth hover effects and animations
-- Reset functionality
+- Smooth hover effects and transitions
 
-## TECH STACK
+---
+
+## 🛠 TECH STACK
 
 - React
 - Vite
 - JavaScript
 - CSS
 
-## LIVE DEMO
+---
 
-tic-tac-toe-react-2le5191jb-cheguri-hansika-reddy-s-projects.vercel.app
+## 🌐 LIVE DEMO
 
-## HOW TO RUN LOCALLY
+https://tic-tac-toe-react-omega-three.vercel.app/
 
-1. Clone the repository
+---
+
+## 📦 HOW TO RUN LOCALLY
+
+### 1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/hansikareddycheguri-ship-it/tic-tac-toe-react
 ```
 
-2. Install dependencies
+### 2️⃣ Install dependencies
 
 ```bash
 npm install
 ```
 
-3. Start development server
+### 3️⃣ Start development server
 
 ```bash
 npm run dev
 ```
 
-## FUTURE IMPROVEMENTS
+---
 
-- Play vs Computer mode
-- LocalStorage score persistence
+## 🎯 FUTURE IMPROVEMENTS
+
+- Minimax AI opponent
 - Sound effects
 - Dark/Light theme toggle
+- Match history tracking
+- Online multiplayer support
 
-## AUTHOR
+---
+
+## 📸 SCREENSHOTS
+
+(Add screenshots here later)
+
+---
+
+## 👩‍💻 AUTHOR
 
 Hansika Reddy
